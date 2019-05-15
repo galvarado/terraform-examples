@@ -2,7 +2,7 @@
 provider "openstack" {
   user_name   = "admin"
   tenant_name = "admin"
-  password    = "w3h58h3ooq"
+  password    = "somepass"
   auth_url    = "http://controller01:5000/v3"
   region      = "RegionOne"
 }

@@ -1,7 +1,7 @@
 provider "mysql" {
   endpoint = "localhost:3306"
-  username = "root"
-  password = "Pb5c2.<:-Gf7vc4M"
+  username = "root"   #Some user with privileges
+  password = "Pb5c2.<:-Gf7vc4M"  #Some strong pass
 }
 
 # Crear base de datos
@@ -11,8 +11,8 @@ resource "mysql_database" "proyecto" {
 
 # Crear usuario
 resource "mysql_user" "demo" {
-  user     = "demo"
+  user     = "demo"  #Some user
   host     = "localhost"
-  password = "Xd5c2.<:-Gf7vc5M"
+  password = "Xd5c2.<:-Gf7vc5M"    #Some strong pass
 }
 
